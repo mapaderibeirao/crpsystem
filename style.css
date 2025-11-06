@@ -1,0 +1,188 @@
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  /* ===== Tela inicial ===== */
+  #telaInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+  }
+
+  #telaInicial img.capa {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  #tituloInicial {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  #caixaBuscaInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  #nomeBuscaInicial {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+
+  #botaoBuscaInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  #logoInicial {
+    margin-top: 10px;
+  }
+
+  #logoInicial img {
+   
+  }
+  
+  #creditoCriador{
+	  position: absolute; 
+	  bottom: 5px; right: 5px;
+	  font-size: 9px;
+  }
+
+  /* ===== Estrutura principal ===== */
+  #estruturaPrincipal {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #map {
+    flex: 1;
+    min-height: 300px;
+    position: relative;
+  }
+
+  #botaoVoltar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  #botaoVoltar:hover {
+    background: #0b5ed7;
+  }
+
+  #logoPrefeitura {
+    position: absolute;
+    bottom: 26px;
+    right: 10px;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 6px;
+    padding: 4px 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  }
+
+  #logoPrefeitura img {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
+
+  #painel {
+    padding: 20px 10px;
+    background: #f8f9fa;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  #mensagemResultado {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  #pesquisaGroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #pesquisaGroup .material-icons {
+    position: absolute;
+    left: 10px;
+    color: #888;
+  }
+
+  #pesquisa {
+    padding-left: 36px;
+  }
+
+  #lista {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .item button {
+    background: #0d6efd;
+    border: none;
+  }
+
+  .item button:hover {
+    background: #0b5ed7;
+  }
+
+  @media (max-width: 600px) {
+    #botaoVoltar {
+      top: 8px;
+      right: 8px;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    #logoPrefeitura img {
+      height: 32px;
+    }
+  }
